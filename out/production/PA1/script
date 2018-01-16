@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# You cannot run this file from eclipse.  You must run it from the terminal
+
+javac CaesarComparer.java
+
+echo "Timing for encryptSB method:"
+time java CaesarComparer encryptSB
+
+echo "Timing for encryptChArr method:"
+time java CaesarComparer encryptChArr
+
+echo "Timing for encryptStr method:"
+time java CaesarComparer encryptStr
+
+rm *.class
