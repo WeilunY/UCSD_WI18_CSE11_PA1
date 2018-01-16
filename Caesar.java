@@ -16,7 +16,7 @@ public class Caesar {
 
   private static char letterOperation(char a, int rotation) {
     // TODO: Complete this method
-    
+
     // Check rotation of negative and large num Case
     // Convert large number to smaller
     if (rotation > 26)
@@ -76,12 +76,28 @@ public class Caesar {
   public static String encryptChArr(String s, int rotation) {
     // TODO: Complete this method
     // letters are between 65 and 90 (Upper Case) and 97 and 122 (Lower Case)
-    return "";
+    char[] array_s = s.toCharArray();
+
+    for (int i = 0; i < array_s.length; i++){
+      char a = array_s[i];
+      array_s[i] = letterOperation(a, rotation);
+    }
+
+    String result = new String(array_s);
+    return result;
   }
 
   public static String decryptChArr(String s, int rotation) {
     // TODO: Complete this method
-    return "";
+    char[] array_s = s.toCharArray();
+
+    for (int i = 0; i < array_s.length; i++){
+      char a = array_s[i];
+      array_s[i] = letterOperation(a, 26 - rotation);
+    }
+
+    String result = new String(array_s);
+    return result;
   }
 
   public static String encryptSB(String s, int rotation) {
