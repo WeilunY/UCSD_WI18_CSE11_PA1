@@ -1,0 +1,27 @@
+Q1:
+  Trial 1 real time:
+    encryptSB: 0m0.720s
+    encryptChArr: 0m0.667s
+    encryptStr: 0m13.306s
+
+  Trial 2 real time:
+    encryptSB: 0m0.718s
+    encryptChArr: 0m0.699s
+    encryptStr: 0m13.375s
+
+  Trial 3 real time:
+    encryptSB: 0m0.679s
+    encryptChArr: 0m0.659s
+    encryptStr: 0m13.385s
+
+Q2:
+    Since the String is immutable, String cannot be appended, instead it creates and
+  return a new object for each change, which takes a lot of time when dealing with long
+  Strings.
+    While on the other hand StringBuilder is mutable because StringBuilder contains an
+  internal char array. So when appending, StringBuilder changes the char array in it.
+    Doesn't like a String, StringBuilder doesn't return a new String every time it is
+  changed, therefore StringBuilder is much faster when dealing with long Strings.
+
+Q3:
+  
