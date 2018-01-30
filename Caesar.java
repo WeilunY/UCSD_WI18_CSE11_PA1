@@ -4,8 +4,8 @@ import java.util.*;
 /**
 * @author: cs11wml
 * @pid: A15017352
-* @date: 1/15/2018
-* @about: Found bugs in the original files and fixed them
+* @date: 1/16/2018
+* @about: Encrypt and decrypt string using different type method
 * */
 public class Caesar {
 

@@ -5,7 +5,7 @@
  * @about: Found bugs in the original files and fixed them
 
  # Error 1: line 8
-  Sytax Error - invalid method declaration; return type required
+  Syntax Error - invalid method declaration; return type required
   - Incorrect: public static findMax(int[] array)
   - FIXED: public static int findMax(int[] array)
   - Explanation: Correction adds the return datatype "int" to the original Method

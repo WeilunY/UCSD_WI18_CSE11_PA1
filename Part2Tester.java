@@ -165,11 +165,6 @@ public class Part2Tester {
     failCases += testDecryptWithLargeNegativeRotation();
 
 
-    // TODO Add your tests here.  Some ideas: negative numbers,
-    // non-numeric characters, large values for rotation, etc.
-    // (There are more things to test.)
-
-
     //Messages that print whether tests were successful or not
     if (failCases == 0) {
       System.out.println("ALL Tests Passed! :D");
